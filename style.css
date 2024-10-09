@@ -7,7 +7,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Navigation Styles */
 nav {
     background: #333;
     color: #fff;
@@ -17,6 +16,7 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center; 
 }
 
 nav ul li {
@@ -30,7 +30,6 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Header Styles */
 header {
     text-align: center;
     padding: 20px 0;
@@ -38,7 +37,6 @@ header {
     color: white;
 }
 
-/* Section Styles */
 section {
     padding: 20px;
     margin: 20px;
@@ -47,7 +45,34 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Table Styles */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-gallery img {
+    max-width: 45%;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.workout-levels {
+    margin: 20px 0;
+}
+
+.level {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.level h3 {
+    color: #4CAF50;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -68,7 +93,12 @@ th {
     color: white;
 }
 
-/* Button Styles */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -77,16 +107,41 @@ button {
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: white;
+}
+
+footer form {
+    margin: 10px 0;
+}
+
+footer input[type="text"],
+footer input[type="email"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(50% - 24px);
+
+footer button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer button[type="submit"]:hover {
+    background-color: #45a049;
 }
