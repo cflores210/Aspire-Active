@@ -1,1 +1,227 @@
-style.css
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Navigation styles */
+nav {
+    background: #333333;
+    color: #ffffff;
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.nav-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding around the container */
+}
+
+/* Unordered list styles */
+nav ul {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Flexbox for horizontal layout */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    margin: 0 10px; /* Spacing between items */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #007BFF; /* Blue on hover */
+}
+
+/* Sign Up button styles */
+nav a[href="signup.html"] {
+    background: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav a[href="signup.html"]:hover {
+    background: #FF6F00; /* Orange on hover */
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #FF6F00; /* Background color for header */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for spacing */
+    width: 100%; /* Full width */
+    position: relative; /* Ensures it remains in normal flow */
+    z-index: 1; /* Keeps it above other elements */
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header img {
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Keeps image aspect ratio */
+    display: block; /* Ensures no space below the image */
+}
+
+/* Section styles */
+section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 20px;
+    color: #35424a;
+}
+
+/* Button styles */
+button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #FF6F00; /* Orange on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+table th, table td {
+    border: 1px solid #007;
+    text-align: left;
+    padding: 8px;
+}
+
+table th {
+    background-color: #FF6F00;
+    color: #ffffff;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+footer form {
+    margin-top: 10px;
+}
+
+footer label {
+    display: block;
+    margin: 5px 0;
+}
+
+footer input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        width: 100%; /* Full width for the menu */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Margin between items when stacked */
+    }
+
+    nav a[href="signup.html"] {
+        margin-top: 10px; /* Margin on top for the sign-up button */
+    }
+}
+
+/* Additional styles for devices with max width of 480px */
+@media (max-width: 480px) {
+    nav {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack the nav items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    nav ul {
+        width: 100%; /* Full width for the menu */
+        padding: 0; /* Remove padding */
+    }
+
+    nav ul li {
+        margin: 0; /* No margin between items */
+        width: 100%; /* Make each item take the full width */
+    }
+
+    nav ul li a {
+        display: block; /* Make links fill the container */
+        text-align: left; /* Align text to the left */
+        padding: 10px; /* Add padding for better touch targets */
+    }
+
+    header {
+        padding: 15px; /* Adjust header padding */
+    }
+
+    section {
+        padding: 15px; /* Adjust section padding */
+    }
+
+    footer {
+        padding: 10px; /* Adjust footer padding */
+    }
+}
