@@ -225,3 +225,16 @@ footer input {
         padding: 10px; /* Adjust footer padding */
     }
 }
+.image-gallery {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center images horizontally */
+    flex-wrap: wrap; /* Allow images to wrap to the next line on smaller screens */
+    gap: 7px; /* Space between images */
+}
+
+.image-gallery img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: 471px; /* Fixed width for consistency; adjust as necessary */
+    border-radius: 8px; /* Optional: rounded corners for aesthetics */
+}
